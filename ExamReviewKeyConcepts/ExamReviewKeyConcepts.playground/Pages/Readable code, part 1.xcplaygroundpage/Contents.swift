@@ -16,6 +16,7 @@ c.drawLine(fromX: t, fromY: 0, toX: t, toY: 360, lineWidth: blah)
 var junk = 10-asdf; var a = asdf*(100-90) + 100
 c.drawLine(fromX: a, fromY: 0, toX: a, toY: c.height, lineWidth: junk)
 }
+
 //: ## Template code
 //: The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = c.imageView

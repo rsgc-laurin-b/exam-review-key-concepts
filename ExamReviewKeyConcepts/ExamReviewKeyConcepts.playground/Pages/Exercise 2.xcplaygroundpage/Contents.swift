@@ -23,6 +23,11 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+// color for background 193, 76, 84
+
+canvas.fillColor = Color(hue: 193, saturation: 76, brightness: 94, alpha: 15)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.

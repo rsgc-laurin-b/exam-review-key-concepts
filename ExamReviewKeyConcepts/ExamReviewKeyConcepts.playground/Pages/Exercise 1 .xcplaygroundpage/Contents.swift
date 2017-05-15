@@ -23,6 +23,16 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+canvas.fillColor = Color(hue: 193, saturation: 76, brightness: 94, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+
+//193, 76, 84
+canvas.textColor = Color(hue: 10, saturation: 0, brightness: 0, alpha: 10)
+
+for y in stride(from: -50, to: 300, by: 5){
+    canvas.drawText(message: "blur", size: 200, x: 10, y: y)
+}
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.

@@ -72,7 +72,6 @@ for counter in 1...7 {
     
     // Draw the circle
     canvas.drawEllipse(centreX: x, centreY: canvas.height / 2, width: 50, height: 50)
-    
 }
 /*:
  ## Template code
