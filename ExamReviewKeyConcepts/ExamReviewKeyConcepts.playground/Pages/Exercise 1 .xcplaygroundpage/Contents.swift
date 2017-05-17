@@ -29,11 +29,27 @@ canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 //193, 76, 84
 canvas.textColor = Color(hue: 10, saturation: 0, brightness: 0, alpha: 10)
 
+//draw a loop that creates the text but moves the y value up by 5 every time to create the blur effect
 for y in stride(from: -50, to: 300, by: 5){
     canvas.drawText(message: "blur", size: 200, x: 10, y: y)
 }
 
+//draw another blur text to make it easier to read and make it look like the original
+canvas.textColor = Color(hue: 10, saturation: 0, brightness: 0, alpha: 100)
+    canvas.drawText(message: "blur", size: 200, x: 10, y: 275)
 
+//make all the text at the top
+var textsize = 10
+//upper text
+canvas.drawText(message: "saturday", size: textsize, x: 20, y: 570)
+canvas.drawText(message: "mandela hall", size: textsize, x: 150, y: 570)
+canvas.drawText(message: "special guest", size: textsize, x: 280, y: 570)
+//lower text
+canvas.drawText(message: "october 16 1993 / 8 pm", size: textsize, x: 20, y: 560)
+canvas.drawText(message: "at university of sussex", size: textsize, x: 150, y: 560)
+canvas.drawText(message: "salad, plus my life story", size: textsize, x: 280, y: 560)
+//price text
+canvas.drawText(message: "$6.50 / &5.50 advance", size: textsize, x: 280, y: 550)
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
