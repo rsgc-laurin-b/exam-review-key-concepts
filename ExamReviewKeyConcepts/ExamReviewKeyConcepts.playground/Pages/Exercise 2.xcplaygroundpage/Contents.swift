@@ -23,10 +23,34 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
-// color for background 193, 76, 84
+//make all the text at the top
 
-canvas.fillColor = Color(hue: 193, saturation: 76, brightness: 94, alpha: 15)
-canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+//variable so that if the textsize needs to be changed i dont have to replace every single one
+var textsize = 10
+var yvalupper = 550
+//upper text
+canvas.textColor = Color.black
+canvas.drawText(message: "straight music presents", size: textsize, x: 20, y: yvalupper)
+canvas.drawText(message: "victoria hall hanley", size: textsize, x: 150, y: yvalupper)
+canvas.drawText(message: "advance tickets: $2.00", size: textsize, x: 280, y: yvalupper)
+////lower text
+//canvas.drawText(message: "october 16 1993 / 8 pm", size: textsize, x: 20, y: 560)
+//canvas.drawText(message: "at university of sussex", size: textsize, x: 150, y: 560)
+//canvas.drawText(message: "salad, plus my life story", size: textsize, x: 280, y: 560)
+////price text
+//canvas.drawText(message: "$6.50 / &5.50 advance", size: textsize, x: 280, y: 550)
+
+
+
+canvas.translate(byX: 10, byY: 400)
+
+
+for y in stride(from: 95, to: 0, by: -5){
+    canvas.drawText(message: "undertones", size: 70, x: 0, y: 0)
+    canvas.translate(byX: -2, byY: 0)
+    canvas.rotate(by: -5)
+    canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: y)
+}
 
 
 //: ## Template code
